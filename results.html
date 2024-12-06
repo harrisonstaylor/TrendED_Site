@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body style = 'background-color: #F9F6EE'>
+<!-- Side navigation -->
+<div class="sidenav">
+  <img src="img/cropped.png" style='display: block; max-height: 75%; max-width: 75%; margin-left: auto; margin-right: auto' alt="WPI logo"/>
+  <a href="index.html">Home</a>
+  <a href="dataset.html">Dataset</a>
+  <a href="yolo.html">Model</a>
+  <a href="results.html">Results</a>
+</div>
+
+
+<div class="main">
+
+
+  <img src="img/Classification_ex_1.png" alt="YOLO Classification Example" class="center_img">
+
+
+
+  <div class="content">
+    <p style='text-align:center'><a href="python/best.pt">YOLO model results</a></p>
+    <p style='text-align:center'>
+      The classifier performed well over 10 epochs, reaching an accuracy rate of about 25%. The CNN uses a sigmoid
+      activation function in the output layer to output the probabilities for the likelihood of the image belonging to each class, allowing for multi-label
+      predictions. However, these proved to be far too computationally intensive, so we had to resort to identifying one class: Sign.
+      Here are some of the resulting images:
+
+    </p>
+    <img src="example_photos/ex_photo1.jpg" alt="Example Photo 1" class="row_img" style="margin-left: 12%">
+    <img src="example_photos/ex_photo2.jpg" alt="Example Photo 2" class="row_img">
+    <img src="example_photos/ex_photo3.jpg" alt="Example Photo 3" class="row_img">
+    <img src="example_photos/ex_photo4.jpg" alt="Example Photo 4" class="row_img" style="margin-left: 37%">
+  </div>
+  <video class = center_img controls>
+    <source src = "img/example_result_video.mp4" type = 'video/mp4'>
+  </video>
+</div>
+</body>
+</html>

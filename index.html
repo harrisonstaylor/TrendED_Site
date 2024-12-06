@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:onmouseover="http://www.w3.org/1999/xhtml">
+<head>
+  <title> SignSight </title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <img src="img/cropped.png" style = 'display: block; max-height: 75%; max-width: 75%; margin-left: auto; margin-right: auto' alt="WPI logo"/>
+  <a href="index.html">Home</a>
+  <a href="dataset.html">Dataset</a>
+  <a href="yolo.html">Model</a>
+  <a href="results.html">Results</a>
+</div>
+
+
+
+<body style = 'background-color: #F9F6EE'>
+<script src="main.js"></script>
+
+
+<div class="main">
+  <div class="center_img">
+    <div class="container" style = 'margin-left: 15%'>
+      <div class="image">
+        <img src="img/arabic_sign.jpg" onmouseover="hover(this, 0);" onmouseout="unhover(this, 0);"/>
+      </div>
+      <div class="image">
+        <img src="img/euro_sign.jpg" onmouseover="hover(this, 1);" onmouseout="unhover(this, 1);" style = 'max-width: 96.1%; max-height: 96.1%'/>
+      </div>
+      <div class="image">
+        <img src="img/korean_sign.jpeg" onmouseover="hover(this, 2);" onmouseout="unhover(this, 2);"/>
+      </div>
+      <div class="image">
+        <img src="img/stop_sign.jpg" style = 'overflow: hidden; max-height: 87%' onmouseover="hover(this, 3);"
+             onmouseout="unhover(this, 3);"/>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <p style = 'text-align:center;'>Sign Sight is a collaborative project to design a machine learning model to identify signs in photos and videos, as
+      well as their type and continent of origin. This project was created for Worcester Polytechnic class CS 539 Machine Learning and was created by <a href = 'https://github.com/TheBigBryce'>Bryce Lukens</a>, <a href = 'https://github.com/gbarbosa99'>Gabriel Barbosa</a>, and <a href="https://github.com/harrisonstaylor">Harrison Taylor</a>. </p>
+  </div>
+</div>
+</body>
+</html>
